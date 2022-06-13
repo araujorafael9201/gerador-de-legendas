@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<title>Gerador de Legendas</title>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="apple-touch-icon" sizes="57x57" href={{ url_for('static', filename="apple-icon-57x57.png") }}>
+<link rel="apple-touch-icon" sizes="60x60" href={{ url_for('static', filename="apple-icon-60x60.png") }}>
+<link rel="apple-touch-icon" sizes="72x72" href={{ url_for('static', filename="apple-icon-72x72.png") }}>
+<link rel="apple-touch-icon" sizes="76x76" href={{ url_for('static', filename="apple-icon-76x76.png") }}>
+<link rel="apple-touch-icon" sizes="114x114" href={{ url_for('static', filename="apple-icon-114x114.png") }}>
+<link rel="apple-touch-icon" sizes="120x120" href={{ url_for('static', filename="apple-icon-120x120.png") }}>
+<link rel="apple-touch-icon" sizes="144x144" href={{ url_for('static', filename="apple-icon-144x144.png") }}>
+<link rel="apple-touch-icon" sizes="152x152" href={{ url_for('static', filename="apple-icon-152x152.png") }}>
+<link rel="apple-touch-icon" sizes="180x180" href={{ url_for('static', filename="apple-icon-180x180.png") }}>
+<link rel="icon" type="image/png" sizes="192x192"  href={{ url_for('static', filename="android-icon-192x192.png") }}>
+<link rel="icon" type="image/png" sizes="32x32" href={{ url_for('static', filename="favicon-32x32.png") }}>
+<link rel="icon" type="image/png" sizes="96x96" href={{ url_for('static', filename="favicon-96x96.png") }}>
+<link rel="icon" type="image/png" sizes="16x16" href={{ url_for('static', filename="favicon-16x16.png") }}>
+<link rel="manifest" href={{ url_for('static', filename="manifest.json") }}>
+<meta name="msapplication-TileColor" content="#6A5ACD">
+<meta name="msapplication-TileImage" content={{url_for('static', filename="ms-icon-144x144.png") }}>
+<meta name="theme-color" content="#6A5ACD">
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+
+</head>
+
+<body class="w3-teal">
+
+<center>
+
+<div class="w3-content" style="max-width:1400px">
+
+  <header class="w3-container w3-center w3-padding-32"> 
+    <h1><b>GERADOR DE LEGENDAS</b></h1>
+    <p>Um projeto de <span class="w3-tag">Rafael Araújo, Paulo e Kleiton</span></p>
+  </header>
+
+  <div style="max-width: 70%;"class="w3-card w3-light-grey w3-center w3-padding">
+    <div class="w3-container">
+      <h3><b>ADICIONAR ARQUIVO</b></h3>
+
+      <form action="/generate" method="post" enctype="multipart/form-data">
+        <input type="file" name="video" id="video">
+
+        <input type="checkbox" name="en" id="en" checked>
+        <label for="en">Inglês</label>
+        <input type="checkbox" name="pt" id="pt">
+        <label for="pt">Português</label>
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+
+    <div class="w3-container w3-center">
+      <p>O proposito desse projeto é ajudar as pessoas a legendarem seus filmes/vídeos facilmente</p>
+
+      <div class="w3-container m4 w3-hide-small">
+        <p><span class="w3-padding-large"><b>Mossoró</b> <span class="w3-tag">IFRN</span></span></p>
+      </div>
+    </div>
+    
+  <hr>
+
+
+  <div class="w3-container w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>INSTAGRAM:</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src={{ url_for('static', filename='logoinsta.jpg') }} alt="Image" class="w3-left w3-margin-right" style="width:25px">
+        <span class="w3-large"><a href="https://www.instagram.com/rafaelaraujo13_/" target="_blank">Rafael Araújo</a></span><br>
+      </li>
+      <li class="w3-padding-16">
+        <img src={{ url_for('static', filename='logoinsta.jpg') }} alt="Image" class="w3-left w3-margin-right" style="width:25px">
+        <span class="w3-large"> <a href="https://www.instagram.com/paulaokkkkk/" target="_blank">Paulo Henrique</a></span><br>
+      </li> 
+      <li class="w3-padding-16">
+        <img src={{ url_for('static', filename='logoinsta.jpg') }} alt="Image" class="w3-left w3-margin-right" style="width:25px">
+        <span class="w3-large"> <a href="https://www.instagram.com/kleiton_404/" target="_blank">Kleiton Josivan</a></span><br>
+      </li>   
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src={{ url_for('static', filename='logoinsta.jpg') }} alt="Image" class="w3-left w3-margin-right" style="width:25px">
+        <span class="w3-large"> <a href="https://www.instagram.com/ifrnmossoro/" target="_blank">IFRN MOSSORÓ</a></span><br>
+      </li>  
+    </ul>
+  </div>
+  <hr> 
+
+</div>
+
+</div><br>
+
+</div>
+
+</body>
+</html>
