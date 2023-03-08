@@ -2,3 +2,4 @@
 videos/*
 legendas/*
 audios/*
+__pycache__/
