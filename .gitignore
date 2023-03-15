@@ -1,5 +1,7 @@
-/env
+env/*
 videos/*
-legendas/*
 audios/*
+legendas/*
+zip/*
 __pycache__/
+firebase-key.json
