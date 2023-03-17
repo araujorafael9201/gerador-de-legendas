@@ -1,7 +1,4 @@
-env/*
-videos/*
-audios/*
-legendas/*
-zip/*
+client/env
+server/env
 __pycache__/
 firebase-key.json
